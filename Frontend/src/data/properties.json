@@ -1,0 +1,38 @@
+[
+  {
+    "Id":1,
+    "Name":"Adani Housing",
+    "Type":"House",
+    "Price":12000
+  },
+  {
+    "Id":2,
+    "Name":"Birla Housing",
+    "Type":"House",
+    "Price":18000
+  },
+  {
+    "Id":3,
+    "Name":"Reliance Housing",
+    "Type":"House",
+    "Price":20000
+  },
+  {
+    "Id":4,
+    "Name":"Ganesh Housing",
+    "Type":"House",
+    "Price":13000
+  },
+  {
+    "Id":5,
+    "Name":"Lotus Housing",
+    "Type":"House",
+    "Price":12000
+  },
+  {
+    "Id":6,
+    "Name":"Sukan Housing",
+    "Type":"House",
+    "Price":12000
+  }
+]
