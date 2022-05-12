@@ -45,5 +45,112 @@
     "Name":"Sukan Housing",
     "Type":"House",
     "Price":12000
+  },
+  {
+    "Id":7,
+    "SellRent": 1,
+    "Name":"Sukan Housing",
+    "Type":"House",
+    "Price":12000,
+    "Image":"prop-2"
+  },
+  {
+    "Id":8,
+    "SellRent": 1,
+    "Name":"Sukan Housing",
+    "Type":"House",
+    "Price":12000
+  },
+  {
+    "Id":9,
+    "SellRent": 1,
+    "Name":"Vastu Housing",
+    "Type":"House",
+    "Price":52000
+  },
+  {
+    "Id":10,
+    "SellRent": 1,
+    "Name":"Sukan Housing",
+    "Type":"House",
+    "Price":32000,
+    "Image":"prop-1"
+  },
+  {
+    "Id":11,
+    "SellRent": 1,
+    "Name":"Green Housing",
+    "Type":"House",
+    "Price":12000,
+    "Image":"prop-2"
+  },
+  {
+    "Id":12,
+    "SellRent": 1,
+    "Name":"Moon Housing",
+    "Type":"House",
+    "Price":100000,
+    "Image":"prop-4"
+  },
+  {
+    "Id":13,
+    "SellRent": 1,
+    "Name":"Sukan Housing",
+    "Type":"House",
+    "Price":12000
+  },
+  {
+    "Id":14,
+    "SellRent": 1,
+    "Name":"star Housing",
+    "Type":"House",
+    "Price":12000,
+    "Image":"prop-2"
+  },
+  {
+    "Id":15,
+    "SellRent": 2,
+    "Name":"Galaxy Housing",
+    "Type":"House",
+    "Price":16000,
+    "Image":"prop-4"
+  },
+  {
+    "Id":16,
+    "SellRent": 1,
+    "Name":"Sukan Housing",
+    "Type":"House",
+    "Price":18000,
+    "Image":"prop-1"
+  },
+  {
+    "Id":17,
+    "SellRent": 2,
+    "Name":"Sky Housing",
+    "Type":"House",
+    "Price":12000
+  },
+  {
+    "Id":18,
+    "SellRent": 2,
+    "Name":"Godhrej Housing",
+    "Type":"House",
+    "Price":19000,
+    "Image":"prop-3"
+  },
+  {
+    "Id":19,
+    "SellRent": 2,
+    "Name":"Glory Housing",
+    "Type":"House",
+    "Price":19000
+  },
+  {
+    "Id":20,
+    "SellRent": 2,
+    "Name":"Test Housing",
+    "Type":"House",
+    "Price":120000,
+    "Image":"prop-5"
   }
 ]
