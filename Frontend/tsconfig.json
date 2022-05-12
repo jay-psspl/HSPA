@@ -13,6 +13,11 @@
     "suppressImplicitAnyIndexErrors": true,
     //"strict" : false
 
+    "typeRoots": [
+      "node_modules/@types",
+      "src/alertyfytype.d.ts"
+    ],
+
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
