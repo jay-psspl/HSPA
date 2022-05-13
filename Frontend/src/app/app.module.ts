@@ -40,10 +40,12 @@ const appRoutes: Routes = [
     PropertyListComponent,
     NavBarComponent,
     NavBarComponent,
-    AddPropertyComponent,
     PropertyDetailComponent,
     UserRegisterComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    AddPropertyComponent
+
+
 
 
    ],
