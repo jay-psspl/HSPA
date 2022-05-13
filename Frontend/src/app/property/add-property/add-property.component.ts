@@ -2,7 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { TabsetComponent } from 'ngx-bootstrap/tabs';
-import { IProperty } from '../IProperty.interface';
+import { IPropertyBase } from 'src/app/model/ipropertybase';
+
 
 @Component({
   selector: 'app-add-property',
@@ -23,13 +24,19 @@ export class AddPropertyComponent implements OnInit {
   furnishTypes: Array<string> = ['Fully', 'Semi', 'Unfurnished']
   readytomove: Array<string> = ['East','West','South','North']
 
-  propertyView: IProperty = {
+  propertyView: IPropertyBase = {
 
     Id: null,
     Name: '',
     Price: null,
     SellRent: null,
-    Type: null
+    PType: null,
+    FType: null,
+    BHK: null,
+    BuiltArea: null,
+    City: null,
+    RTM: null,
+
   };
 
   constructor(private router: Router) { }
@@ -50,6 +57,7 @@ export class AddPropertyComponent implements OnInit {
   onSubmit()
   {
     console.log('Congrats, form Submitted');
+    console.log('SellRent=' +  this.addPropertyForm.value.BasicInfo.SellRent);
     console.log(this.addPropertyForm);
   }
 

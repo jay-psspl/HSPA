@@ -1,5 +1,5 @@
 <div class="row mb-5">
-  <div class="col-8">
+  <div class="col-8 shadow-lg p-0 bg-white">
 
     <div class="card">
       <div class="card-header">
@@ -7,47 +7,43 @@
       </div>
       <div class="card-body">
         <form (ngSubmit)='onSubmit()' #Form="ngForm">
-          <div>
-            <tabset #formTabs>
-              <tab heading="Basic Info">
+          <div class="tab-panel">
+            <tabset class="member-tabset" #formTabs>
+
+              <tab heading="Basic Info" ngModelGroup="BasicInfo" #BasicInfo="ngModelGroup">
+
                 <div class="form-group mb-4">
                   <p>I Want to</p>
-
-                  <div class="btn-group" btnRadioGroup>
+                  <div class="btn-group" btnRadioGroup ngModel name="SellRent" required>
                     <label class="btn btn-outline-primary " btnRadio=1 tabindex="0" role="button"
                       name="SellRent">Sell</label>
                     <label class="btn btn-outline-primary " btnRadio=2 tabindex="0" role="button"
                       name="SellRent">Rent</label>
                   </div>
-
                 </div>
 
 
                 <div class="form-group mb-4">
                   <p>BHK</p>
-
-                  <div class="btn-group " btnRadioGroup>
+                  <div class="btn-group " btnRadioGroup [(ngModel)]="propertyView.BHK" name="BHK">
                     <label *ngFor="let bhk of ['1','2','3','4']" class="btn btn-outline-primary" [btnRadio]='bhk'
-                      tabindex="0" role="button" name="SellRent">{{bhk}}</label>
+                      tabindex="0" role="button" name="BHK">{{bhk}}</label>
                   </div>
                 </div>
 
                 <div class="form-group mb-4">
                   <p>Property Types</p>
-
-                  <div class="btn-group " btnRadioGroup name="propType" [(ngModel)]="propertyView.Type">
+                  <div class="btn-group " btnRadioGroup name="propType" [(ngModel)]="propertyView.PType">
                     <label *ngFor="let ptype of propertyTypes" class="btn btn-outline-primary" [btnRadio]='ptype'
-                      tabindex="0" role="button" name="SellRent">{{ptype}}</label>
+                      tabindex="0" role="button" name="PropType">{{ptype}}</label>
                   </div>
                 </div>
 
-
                 <div class="form-group mb-4">
                   <p>Furnishing Type</p>
-
-                  <div class="btn-group " btnRadioGroup>
+                  <div class="btn-group " btnRadioGroup [(ngModel)]="propertyView.FType" name="FType">
                     <label *ngFor="let ftype of furnishTypes" class="btn btn-outline-primary" [btnRadio]='ftype'
-                      tabindex="0" role="button" name="SellRent">{{ftype}}</label>
+                      tabindex="0" role="button" name="FurnishType">{{ftype}}</label>
                   </div>
                 </div>
 
@@ -63,13 +59,12 @@
 
                 <div class="form-group mb-4">
                   <label>City</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [(ngModel)]="propertyView.City" name="City">
                 </div>
 
 
                 <div class="form-group mb-4">
-
-                  <button type="button" class="btn btn-primary w-100" (click)="selectTab(1)">Next</button>
+                  <button type="button" class="btn btn-primary w-100" (click)="selectTab(1)" [disabled]="!BasicInfo.valid">Next</button>
                 </div>
 
               </tab>
@@ -81,24 +76,20 @@
                   <input type="text" class="form-control" name="price" [(ngModel)]="propertyView.Price">
                 </div>
 
-
                 <div class="form-group mb-4">
                   <label>Security (in USD)</label>
                   <input type="text" class="form-control">
                 </div>
-
 
                 <div class="form-group mb-4">
                   <label>Maintenance (in USD)</label>
                   <input type="text" class="form-control">
                 </div>
 
-
                 <div class="form-group mb-4">
                   <label>Built Area (in Sqr Feet)</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [(ngModel)]="propertyView.BuiltArea" name="BuiltArea">
                 </div>
-
 
                 <div class="form-group mb-4">
                   <label>Carpet Area(in Sqr Feet)</label>
@@ -118,24 +109,20 @@
                   <input type="text" class="form-control">
                 </div>
 
-
                 <div class="form-group mb-4">
                   <label>Total Floor</label>
                   <input type="text" class="form-control">
                 </div>
-
 
                 <div class="form-group mb-4">
                   <label>Address</label>
                   <input type="text" class="form-control">
                 </div>
 
-
                 <div class="form-group mb-4">
                   <label>Landmark</label>
                   <input type="text" class="form-control">
                 </div>
-
 
                 <div class="form-group mb-4">
                   <button type="button" class="btn btn-primary w-100 mb-4" (click)="selectTab(3)">Next</button>
@@ -145,10 +132,8 @@
 
               <tab heading="Other Details">
 
-
                 <div class="form-group mb-4">
                   <p>Ready to Move</p>
-
                   <div class="btn-group" btnRadioGroup>
                     <label class="btn btn-outline-primary" btnRadio=1 tabindex="0" role="button"
                       name="SellRent">Yes</label>
@@ -157,20 +142,16 @@
                   </div>
                 </div>
 
-
                 <div class="form-group mb-4">
                   <label>Possession/Avaialble From</label>
                   <input type="text" placeholder="Datepicker" class="form-control" bsDatepicker
                     [bsConfig]="{containerClass: 'theme-dark-blue', dateInputFormat: 'DD-MM-YYYY'}">
                 </div>
 
-
                 <div class="form-group mb-4">
                   <label>Age of Property</label>
                   <input type="text" class="form-control">
                 </div>
-
-
 
                 <div class="form-group mb-4">
                   <p>Gated Community</p>
@@ -182,23 +163,18 @@
                   </div>
                 </div>
 
-
                 <div class="form-group mb-4">
                   <p>Ready to move</p>
-
                   <div class="btn-group " btnRadioGroup>
                     <label *ngFor="let rm of readytomove" class="btn btn-outline-primary" [btnRadio]='rm'
                       tabindex="0" role="button" name="SellRent">{{rm}}</label>
                   </div>
-
                 </div>
-
 
                 <div class="form-group mb-4">
                   <label>Description</label>
                   <textarea type="text" class="form-control" rows="6"></textarea>
                 </div>
-
 
                 <div class="form-group mb-4">
                   <button type="button" class="btn btn-primary w-100 mb-4" (click)="selectTab(4)">Next</button>
@@ -215,7 +191,9 @@
                   </div>
                 </div>
                 <div class="form-group mb-4">
-                  <button type="button" class="btn btn-primary w-100" (click)="selectTab(3)">Back</button>
+                  <button type="button" class="btn btn-primary w-100 mb-4" (click)="selectTab(3)">Back</button>
+                  <button type="submit" class="btn btn-primary w-100 mb-4">Save</button>
+                  <button type="reset" class="btn btn-primary w-100">Cancel</button>
                 </div>
               </tab>
             </tabset>
@@ -227,12 +205,15 @@
 
 
   <div class="col-4">
-    <div class="card-header"></div>
-    <h3>Your Property Preview</h3>
 
-    <div>
-      <app-property-card [property]="propertyView"></app-property-card>
+    <div class="card-header">
+      <h3>Your Property Preview</h3>
+    </div>
+
+    <div class="shadow-lg p-3 bg-white">
+      <app-property-card [property]="propertyView" [hideIcons]="true"></app-property-card>
     </div>
 
   </div>
+
 </div>
