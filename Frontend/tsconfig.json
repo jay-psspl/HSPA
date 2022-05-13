@@ -5,13 +5,15 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
     "strictPropertyInitialization": false,
     "noPropertyAccessFromIndexSignature": true,
     //
     "suppressImplicitAnyIndexErrors": true,
     //"strict" : false
+
+    //"stricktNullChecks": false,
 
     "typeRoots": [
       "node_modules/@types",
