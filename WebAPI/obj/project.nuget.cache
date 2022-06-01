@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B0KUv34VK4QY0Afv5FKNcqycT0u20uN3XlgaHywMNmQbFnGQ8s0xf0lL1HpIVBRFpDGz8wDklHawAbWu7BjJiA==",
+  "dgSpecHash": "gel6eKwHhkuA762FMMKUxkK8X2rVgotmwxJozpJK6e+8EnJJP3ah3zWjEKwpKZsvN9vkXOyhWgpwNejtSP7u/Q==",
   "success": true,
-  "projectFilePath": "D:\\Colleqtive\\JAY\\HSPA\\WebApi\\WebAPI.csproj",
+  "projectFilePath": "D:\\Colleqtive\\JAY\\HSPA\\webapi\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jay\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jay\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
