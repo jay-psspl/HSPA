@@ -16,7 +16,7 @@ namespace WebAPI.Data.Repository
 
         public void AddCity(City city)
         {
-            dc.Cities.AddAsync(city);
+            dc.Cities.Add(city);             
         }
 
         public void DeleteCity(int CityId)
@@ -25,14 +25,14 @@ namespace WebAPI.Data.Repository
             dc.Cities.Remove(city);
         }
 
+        public async Task<City> FindCity(int id)
+        {
+            return await dc.Cities.FindAsync(id);
+        }
+
         public async Task<IEnumerable<City>> GetCitiesAsync()
         {
             return await dc.Cities.ToListAsync();
         }
-
-/*        public async Task<bool> SaveAsync()
-        {
-            return await dc.SaveChangesAsync() > 0;
-        }*/
     }
 }
