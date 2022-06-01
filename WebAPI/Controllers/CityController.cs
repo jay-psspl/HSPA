@@ -1,13 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using WebAPI.Data;
-using WebAPI.Data.Repository;
+using WebAPI.Interfaces;
 using WebAPI.Models;
-//using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
@@ -15,47 +8,39 @@ namespace WebAPI.Controllers
     [ApiController]
     public class CityController : ControllerBase
     {
-        
-        private readonly ICityRepository repo;
-        
-        public CityController(ICityRepository repo)
+
+        private readonly IUnitOfWork uow;
+
+        public CityController(IUnitOfWork uow)
         {
-            this.repo = repo;
-            
+            this.uow = uow;
         }
+
 
         [HttpGet]
         public async Task<IActionResult> GetCities()
         {
-            var cities = await repo.GetCitiesAsync();
+            var cities = await uow.cityRepository.GetCitiesAsync();
             return Ok(cities);
         }
+
 
         [HttpPost("post")]
         public async Task<IActionResult> AddCity(City city)
         { 
-            repo.AddCity(city);
-            await repo.SaveAsync();
+            uow.cityRepository.AddCity(city);
+            await uow.SaveAsync();
             return StatusCode(201);
         }
 
-        // [HttpPost("add")] 
-        // [HttpPost("add/{cityname}")]
-        // public async Task<IActionResult> AddCity(string cityName)
-        // {
-        //     City city = new City();
-        //     city.Name = cityName;   
-        //     await dc.Cities.AddAsync(city);
-        //     await dc.SaveChangesAsync();
-        //     return Ok(city);
-        // }
 
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteCity(int id)
         {
-            repo.DeleteCity(id);
-            await repo.SaveAsync();
+            uow.cityRepository.DeleteCity(id);
+            await uow.SaveAsync();
             return Ok(id);
         }
+
     }   
 }
