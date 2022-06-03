@@ -61,3 +61,16 @@ D:\Colleqtive\JAY\HSPA\WebApi\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 D:\Colleqtive\JAY\HSPA\WebApi\obj\Debug\net6.0\ref\WebAPI.dll
 D:\Colleqtive\JAY\HSPA\webapi\bin\Debug\net6.0\AutoMapper.dll
 D:\Colleqtive\JAY\HSPA\webapi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Azure.Core.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Azure.Identity.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Azure.Security.KeyVault.Certificates.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.Identity.Web.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.Identity.Web.Certificate.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.Identity.Web.Certificateless.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.Identity.Web.TokenCache.dll
+D:\Colleqtive\JAY\HSPA\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Validators.dll

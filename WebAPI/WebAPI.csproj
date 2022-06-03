@@ -17,5 +17,6 @@
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0"/>
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.24.1"/>
   </ItemGroup>
 </Project>
