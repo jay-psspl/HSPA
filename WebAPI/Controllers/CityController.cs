@@ -22,7 +22,7 @@ namespace WebAPI.Controllers
         }
 
 
-        [Authorize(Roles = "Manager")]
+        //[Authorize(Roles = "Manager")]
         [HttpGet]
         public async Task<IActionResult> GetCities()
         {

@@ -4,6 +4,8 @@
     {
         ICityRepository cityRepository { get; }
 
+        IUserRepository UserRepository { get; } 
+
         Task<bool> SaveAsync();
     }
 }
