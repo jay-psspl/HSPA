@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qZbTYrBegReKdPLC9d3XlCjnYEJpP5xyFu9rRCtUGWv1yZsfnRfm4A3IYcXSVo2f9HRHaucDyWDyVNwim9j0dA==",
+  "dgSpecHash": "YEa9qyUKAJVPLQTO/tfGWDHLN470NV3CuLM3bVz6FrTgnCWuGa8X3mu++Gyudfs34PoVOEILTHK11HMwq9hy9w==",
   "success": true,
-  "projectFilePath": "D:\\Colleqtive\\JAY\\HSPA\\WebApi\\WebAPI.csproj",
+  "projectFilePath": "D:\\Colleqtive\\JAY\\HSPA\\Webapi\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jay\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\jay\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
